@@ -6,8 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wango</title>
     <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                yellow:'#FECC02',
+                black:'#131313',
+                gray:'#4E4E4E',
+                white:'#FFFFFF'
+              },
+              fontFamily: {
+                comfortaa: ['Comfortaa', 'cursive'],
+                roboto:['Roboto', 'sans-serif']
+              },
+              backgroundImage: {
+                'header':"url('/images/header/header.avif')",
+                'icon':"url('/images/favicon/favicon.png')"
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    
+    <!-- header section start  -->
+        <div class="bg-header bg-cover object-cover object-center h-screen pt-24  font-bebas flex items-center justify-center">
+            <img src="./images/favicon/favicon.png" style="height: 50px; width: 50px; " alt="">
+            <h2 class="font-comfortaa font-semibold text-2xl md:text-4xl lg:text-6xl">photo</h2>
+        </div>
+    <!-- header section end -->
 </body>
 </html>
